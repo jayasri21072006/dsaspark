@@ -213,3 +213,35 @@ class Solution {
         return list;
     }
 }
+
+
+
+
+
+ARRAY SWAP:
+    import java.util.*;
+
+class Main {
+
+    static int[] swap(int[] arr1) {
+        int i = 0;
+        int j = arr1.length - 1;
+
+        while (i < j) {
+            int temp = arr1[i];
+            arr1[i] = arr1[j];
+            arr1[j] = temp;
+            i++;
+            j--;
+        }
+        return arr1;
+    }
+
+    public static void main(String[] args) {
+        int[] arr1 = {1, 2, 3, 4, 5};
+
+        System.out.println(Arrays.toString(arr1));
+        swap(arr1);
+        System.out.println(Arrays.toString(arr1));
+    }
+}
